@@ -1,0 +1,94 @@
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
+
+  #portfolio {
+    width: 110%;
+  }
+}
+
+/* Base styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  text-decoration: none;
+  /* color: #333; */
+  font-weight: bold;
+  padding: 10px 15px;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 4px; */
+  /* background-color: #f8f8f8; */
+  transition: background-color 0.3s;
+}
+
+.dropdown-toggle:hover {
+  background-color: #e8e8e8;
+}
+
+.caret {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  vertical-align: middle;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show the dropdown menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .caret {
+  transform: rotate(-135deg);
+}
+
