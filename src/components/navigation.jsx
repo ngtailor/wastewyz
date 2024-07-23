@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import logo from '../image/wastewyze-logo.jpeg'
 
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
+      <div className="container" style={{width: "1279px"}}>
         <div className="navbar-header">
           <button
             type="button"
@@ -18,10 +19,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="/logo.png" alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
-            Wastewyze
-          </a>
+          {/* <a className="navbar-brand page-scroll" href="#page-top">
+            <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
+          </a> */}
 
         </div>
 
@@ -29,9 +29,14 @@ export const Navigation = (props) => {
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
+           <li>
+            <a className="navbar-brand page-scroll" href="#page-top">
+            <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
+          </a>
+            </li>
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <a href="/" className="page-scroll">
                 Home
               </a>
             </li>
@@ -50,20 +55,20 @@ export const Navigation = (props) => {
                   <Link to="/who-we-are">Who are we</Link>
                 </li>
                 <li>
-                  <a href="#action2">Our Vision</a>
+                  <a href="/our-vision">Our Vision</a>
                 </li>
                 <li>
-                  <a href="#action3">Our Mission</a>
+                  <a href="/our-mission">Our Mission</a>
                 </li>
                 <li>
-                  <a href="#action4">What do we do</a>
+                  <a href="/what-we-do">What do we do</a>
                 </li>
               </ul>
             </li>
 
-            <li className="dropdown">
+            <li className="dropdown page-scroll">
               <a
-                href="#about"
+                href="#driving"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
@@ -72,27 +77,21 @@ export const Navigation = (props) => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="#action1">The Power of Circularity</a>
+                  <a href="/circulaty">The Power of Circularity</a>
                 </li>
                 <li>
-                  <a href="#action2">Sustained Social Impact </a>
-                </li>
-                <li>
-                  <a href="#action3">Our Mission</a>
-                </li>
-                <li>
-                  <a href="#action4">What do we do</a>
+                  <a href="/social_imapct">Sustained Social Impact </a>
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <a href="#portfolio" className="page-scroll">
                 Our Services
               </a>
-            </li>
-            <li className="dropdown">
+            </li> */}
+            <li className="dropdown page-scroll">
               <a
-                href="#"
+                href="#services"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
@@ -101,24 +100,24 @@ export const Navigation = (props) => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="#action1">EPR Compliance Management</a>
+                  <a href="/epr_management">EPR Compliance Management</a>
                 </li>
                 <li>
-                  <a href="#action2">Waste Management Solutions </a>
+                  <a href="/epr_management_solutions">Waste Management Solutions </a>
                 </li>
                 <li>
-                  <a href="#action3">Capacity Building </a>
+                  <a href="/capcity_build">Capacity Building </a>
                 </li>
                 <li>
                   <a href="#action4">Coming Soon: Wastewyze Community Builder</a>
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <a href="#testimonials" className="page-scroll">
                 EPR Management
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#team" className="page-scroll">
                 Our Team

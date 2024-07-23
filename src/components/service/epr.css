@@ -1,0 +1,16 @@
+.waste-streams {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .waste-streams li {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.2em;
+  }
+  

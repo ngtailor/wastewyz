@@ -1,12 +1,13 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 
 export const About = (props) => {
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
     
-      // const handleReadMore = () => {
-      //   navigate('/details');
-      // };
+      const handleReadMore = () => {
+        navigate('/who-we-are');
+      };
 
 
   return (
@@ -23,7 +24,7 @@ export const About = (props) => {
               <p>{props.data ?  props.data.paragraph.slice(0, 100) : "loading..."}
               <span
               style={{ color: 'green', cursor: 'pointer' }}
-              // onClick={handleReadMore}
+              onClick={handleReadMore}
             >
               ... Read more
             </span>

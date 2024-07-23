@@ -1,7 +1,7 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Building a Waste-Wise India",
+    "paragraph": "Join us on a journey where waste ceases to be a burden and becomes the fuel for a more resilient, resource-efficient, and ultimately, profitable future."
   },
   "About": {
     "paragraph": "Wastewyze isn't just a company; we're your partners in fostering environmental responsibility. We're driven by the belief that waste is a resource misplaced, and our mission is to turn that misplaced resource into valuable opportunities for you and the planet. With technologically optimised solutions and passionate expertise, ",
@@ -16,7 +16,10 @@
       "Lorem ipsum dolor",
       "Exercitation ullamco",
       "Lorem ipsum dolor"
-    ]
+    ],
+    "whoWeAre":"Wastewyze isn't just a company; we're your partners in fostering environmental responsibility. We're driven by the belief that waste is a resource misplaced, and our mission is to turn that misplaced resource into valuable opportunities for you and the planet. With technologically optimised solutions and passionate expertise, we guide businesses through India's complex waste management landscape, ensuring compliance and creating sustainable solutions that leave a lasting positive impact."
+      
+    
   },
   "Gallery": [
     {
@@ -68,34 +71,37 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "EPR Compliance Management",
+      "text": "India’s EPR landscape is both complex and evolving, and navigating these regulations can be daunting."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Waste Management Solutions",
+      "text": "We believe that waste management solutions must focus on the complete lifecycle of a product and integrate sustainability in the operational aspects and processes of an enterprise."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Capacity Building",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
     }
+  ],
+  "Driving":[
+    {
+      "icon": "fa fa-wordpress",
+      "name": "EPR Compliance Management",
+      "text": "India’s EPR landscape is both complex and evolving, and navigating these regulations can be daunting."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Waste Management Solutions",
+      "text": "We believe that waste management solutions must focus on the complete lifecycle of a product and integrate sustainability in the operational aspects and processes of an enterprise."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Capacity Building",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    }
+
   ],
   "Testimonials": [
     {
