@@ -29,11 +29,14 @@ export const Navigation = (props) => {
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
-           <li>
+          <ul>
+          <li>
             <a className="navbar-brand page-scroll" href="#page-top">
             <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
           </a>
             </li>
+          </ul>
+         
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="/" className="page-scroll">

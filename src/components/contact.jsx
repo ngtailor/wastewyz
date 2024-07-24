@@ -167,20 +167,45 @@ export const Contact = (props) => {
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <p>
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
-            </div>
+            </div> */}
             <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-phone"></i> Phone
+                </span>{" "}
+                {props.data ? (
+                  <a href={`tel:${props.data.phone}`} className="phone-link">{props.data.phone}</a>
+                ) : (
+                  "loading"
+                )}
+              </p>
+            </div>
+
+            {/* <div className="contact-item">
               <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
+              </p>
+            </div> */}
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-envelope-o"></i> Email
+                </span>{" "}
+                {props.data ? (
+                  <a href={`mailto:${props.data.email}`} className="email-link">{props.data.email}</a>
+                ) : (
+                  "loading"
+                )}
               </p>
             </div>
             <div className="row">
