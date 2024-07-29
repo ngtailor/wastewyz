@@ -1,6 +1,13 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 
 export const WhatDrivingUs = (props) => {
+
+  const navigate = useNavigate();
+    
+      const handleReadMore = () => {
+        navigate('/circulaty');
+      };
   return (
     <div id="driving" className="text-center">
       <div className="container">
@@ -10,6 +17,12 @@ export const WhatDrivingUs = (props) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
           </p>
+          <span
+              style={{ color: 'green', cursor: 'pointer' }}
+              onClick={handleReadMore}
+            >
+              ... Know More
+            </span>
         </div>
         <div className="row">
           {props.data

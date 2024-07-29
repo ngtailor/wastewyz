@@ -15,14 +15,9 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-          India’s EPR landscape is both complex and evolving, and navigating these regulations can be daunting. We hold deep expertise in decoding EPR policy for plastics and other waste streams. We leverage cutting-edge IT solutions to simplify compliance, automate reporting, and minimise your environmental footprint. Let us translate complex regulations into actionable pathways for success.
+          We work with enterprises, governance agencies at state and national level, alliances, individuals and communities through our range of environmental solutions. These include services for:
           </p>
-          <span
-              style={{ color: 'green', cursor: 'pointer' }}
-              onClick={handleKnowMore}
-            >
-              ... Know more
-            </span>
+         
 
         </div>
         <div className="row">
@@ -39,6 +34,12 @@ export const Services = (props) => {
             ))
             : "loading"}
         </div>
+        <span
+              style={{ color: 'green', cursor: 'pointer' }}
+              onClick={handleKnowMore}
+            >
+              ... Know more
+            </span>
       </div>
     </div>
   );

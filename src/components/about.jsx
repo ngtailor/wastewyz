@@ -26,11 +26,11 @@ export const About = (props) => {
               style={{ color: 'green', cursor: 'pointer' }}
               onClick={handleReadMore}
             >
-              ... Read more
+              ... Know More
             </span>
               </p>
-              <h3>Why Choose Us?</h3>
-              <div className="list-style">
+              {/* <h3>Why Choose Us?</h3> */}
+              {/* <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
                     {props.data
@@ -49,7 +49,7 @@ export const About = (props) => {
                       : "loading"}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

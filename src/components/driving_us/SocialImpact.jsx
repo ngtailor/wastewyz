@@ -16,7 +16,7 @@ export const SocialImpact = () => {
     <div>
       <div id="circulity">
         <div className="container">
-          <div className="col-md-8">
+          <div className="col-md-6">
             <div className="row">
               <div className="section-title">
                 <h2>The Power of Circularity</h2>
@@ -199,7 +199,7 @@ export const SocialImpact = () => {
         </p>
       </div>
     </div> */}
-       <Contact data={landingPageData.Contact} />
+       {/* <Contact data={landingPageData.Contact} /> */}
     </div>
   )
 }

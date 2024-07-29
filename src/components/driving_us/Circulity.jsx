@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Contact } from '../contact'
 import JsonData from '../../data/data.json'
 import { useNavigate } from 'react-router-dom'
+import { SocialImpact } from './SocialImpact'
 
 export const Circulity = () => {
     const [landingPageData, setLandingPageData] = useState({});
@@ -18,7 +19,7 @@ export const Circulity = () => {
         <div>
             <div id="circulity">
                 <div className="container">
-                    <div className="col-md-8">
+                    <div className="col-md-6">
                         <div className="row">
                             <div className="section-title">
                                 <h2>The Power of Circularity</h2>
@@ -199,7 +200,9 @@ export const Circulity = () => {
             </div>
           </div>
         </div> */}
+        
                 </div>
+                <SocialImpact />
             </div>
             {/* <div id="footer">
       <div className="container text-center">
@@ -208,6 +211,7 @@ export const Circulity = () => {
         </p>
       </div>
     </div> */}
+         
             <Contact data={landingPageData.Contact} />
         </div>
     )

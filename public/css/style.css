@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -11,7 +11,7 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family:'Poppins', sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -81,14 +81,14 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: 'Oswald';
   text-transform: uppercase;
   color: #555;
   font-size: 15px;
@@ -163,7 +163,7 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
@@ -209,17 +209,17 @@ a:focus,
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background-color: #0e252b;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: #54a534c1;
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 82px;
   font-weight: 700;
@@ -246,7 +246,7 @@ header .intro-text {
 }
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  background:linear-gradient(to right, #f2efed 0%, #FAAC63 100%);
 }
 #features i.fa {
   font-size: 38px;
@@ -257,12 +257,13 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #45C3E5 0%, #c0ac9e 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
 #about {
   padding: 100px 0;
+  background-color: #b1eeff;
 }
 #about h3 {
   font-size: 22px;
@@ -276,7 +277,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background:#45C3E5;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -290,7 +291,7 @@ header .intro-text {
 }
 #about .about-text li:before {
   content: "\f00c";
-  font-family: "FontAwesome";
+  font-family: "'Oswald', sans-serif;";
   color: #5ca9fb;
   font-size: 11px;
   font-weight: 300;
@@ -311,7 +312,7 @@ header .intro-text {
 #services {
   padding: 100px 0;
   /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
-  background: linear-gradient(to right, #a8e063 0%, #56ab2f 100%);
+  background: linear-gradient(to right, #FAAC63 0%, #FAAC63 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -355,7 +356,7 @@ header .intro-text {
 #driving {
   padding: 100px 0;
   /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
-  background: linear-gradient(to right, #7ae8dd 0%, #9cb6e7 100%);
+  background: linear-gradient(to right, #6cd67c 0%, #4a7053 100%);
   color: #fff;
 }
 #driving .driving-desc {
@@ -488,6 +489,7 @@ header .intro-text {
 /* Team Section */
 #team {
   padding: 100px 0;
+  background: #c4f2ff;
 }
 #team h4 {
   margin: 5px 0;
@@ -507,7 +509,8 @@ header .intro-text {
 #contact {
   padding: 100px 0 60px;
   /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
-  background: linear-gradient(to right, #a8e063 0%, #56ab2f 100%);
+  /* background: linear-gradient(to right, #76C482 0%, #56ab2f 100%); */
+  background-color: #e99797;
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -517,7 +520,7 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
+  color: #7d7a7a;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -531,8 +534,11 @@ header .intro-text {
   bottom: 0;
   left: 30px;
 }
+#contact p{
+  color:#7d7a7a
+}
 #contact h3 {
-  color: #fff;
+  color: #7d7a7a;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -557,7 +563,7 @@ header .intro-text {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   float: left;
 }
 #contact .form-control {
@@ -599,7 +605,12 @@ label {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(101, 96, 96);
+  margin-bottom: 10px;
+  display: block;
+}
+#contact .contact-item a {
+  color: rgb(101, 96, 96);
   margin-bottom: 10px;
   display: block;
 }
@@ -632,11 +643,11 @@ label {
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
+  background: #44bada;
   padding: 30px 0;
 }
 #footer p {
-  color: #888;
+  color: #403b3b;
   font-size: 14px;
 }
 #footer a {
@@ -700,7 +711,7 @@ label {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;;
   float: left;
 }
 #circulity .form-control {
@@ -783,7 +794,7 @@ label {
   label {
     font-size: 12px;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
     float: left;
   }
   #capcity_build .form-control {
@@ -834,7 +845,9 @@ label {
     background-color: rgb(187, 227, 187); /* Highlight color on hover */
   }
   
-  
+  .brand-logo{
+    margin-bottom: 10px;
+  }
 
 @media (max-width: 768px) {
   #about img {

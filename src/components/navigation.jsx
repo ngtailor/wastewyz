@@ -5,7 +5,13 @@ import logo from '../image/wastewyze-logo.jpeg'
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container" style={{width: "1279px"}}>
+       <div className="brand-logo">
+         <a className="navbar-brand page-scroll" href="#page-top">
+                <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
+          </a>
+
+         </div>
+      <div className="container" style={{ width: "1279px" }}>
         <div className="navbar-header">
           <button
             type="button"
@@ -24,36 +30,27 @@ export const Navigation = (props) => {
           </a> */}
 
         </div>
+        
 
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
-          <ul>
-          <li>
-            <a className="navbar-brand page-scroll" href="#page-top">
-            <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
-          </a>
-            </li>
-          </ul>
          
+             
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="/" className="page-scroll">
+              <a href="#header" className="page-scroll">
                 Home
               </a>
             </li>
-            <li className="dropdown page-scroll">
+            <li className="page-scroll">
               <a
                 href="#about"
-                className="dropdown-toggle"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
               >
-                About <span className="caret"></span>
+                About <span></span>
               </a>
-              <ul className="dropdown-menu">
+              {/* <ul className="dropdown-menu">
                 <li>
                   <Link to="/who-we-are">Who are we</Link>
                 </li>
@@ -66,40 +63,40 @@ export const Navigation = (props) => {
                 <li>
                   <a href="/what-we-do">What do we do</a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
 
-            <li className="dropdown page-scroll">
+            <li className="page-scroll">
               <a
                 href="#driving"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >What’s Driving Us <span className="caret"></span>
+              >What’s Driving Us <span></span>
               </a>
-              <ul className="dropdown-menu">
+              {/* <ul className="dropdown-menu">
                 <li>
                   <a href="/circulaty">The Power of Circularity</a>
                 </li>
                 <li>
                   <a href="/social_imapct">Sustained Social Impact </a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             {/* <li>
               <a href="#portfolio" className="page-scroll">
                 Our Services
               </a>
             </li> */}
-            <li className="dropdown page-scroll">
+            <li className="page-scroll">
               <a
                 href="#services"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-              > Our Services <span className="caret"></span>
+              > Our Services <span></span>
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -121,6 +118,12 @@ export const Navigation = (props) => {
                 EPR Management
               </a>
             </li> */}
+
+            <li>
+              <a href="#services" className="page-scroll">
+                EPR Management
+              </a>
+            </li>
             <li>
               <a href="#team" className="page-scroll">
                 Our Team
