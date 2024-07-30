@@ -28,18 +28,13 @@ export const Services = (props) => {
                 <i className={d.icon}></i>
                 <div className="service-desc">
                   <h3>{d.name}</h3>
-                  <p>{d.text}</p>
+                  {/* <p>{d.text}</p> */}
                 </div>
               </div>
             ))
             : "loading"}
         </div>
-        <span
-              style={{ color: 'green', cursor: 'pointer' }}
-              onClick={handleKnowMore}
-            >
-              ... Know more
-            </span>
+            <a class="button arrow" href="/epr_management">Know More...</a>
       </div>
     </div>
   );

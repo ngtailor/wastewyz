@@ -333,10 +333,10 @@ header .intro-text {
 }
 #services i.fa {
   font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  width: 100px;
+  height: 100px;
+  padding: 35px 0;
+  background: linear-gradient(to right, #2f96c3 0%, #9cd2ea 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -848,6 +848,42 @@ label {
   .brand-logo{
     margin-bottom: 10px;
   }
+
+  a.button {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.arrow {
+    color: #0e1a18;
+    margin: 1em 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+
+    &::after {
+        display: inline-block;
+        padding-left: 10px;
+        content: "\0279E"; 
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+    &:hover {
+        color: #0c5449;
+
+        &::after {
+            -webkit-transform: translateX(4px);
+            -moz-transform: translateX(4px);
+            -ms-transform: translateX(4px);
+            -o-transform: translateX(4px);
+            transform: translateX(4px);
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
   #about img {

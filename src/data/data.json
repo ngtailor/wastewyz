@@ -70,36 +70,66 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "EPR Compliance Management",
+      "icon": "fa fa-recycle",
+      "name": "EPR Management",
       "text": "India’s EPR landscape is both complex and evolving, and navigating these regulations can be daunting."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Waste Management Solutions",
+      "icon": "fa fa-trash",
+      "name": "Waste Collection Infrastructure",
       "text": "We believe that waste management solutions must focus on the complete lifecycle of a product and integrate sustainability in the operational aspects and processes of an enterprise."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Capacity Building",
+      "icon": "fa fa-recycle",
+      "name": "Recycling",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-cogs",
+      "name": "Technology Integration",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-leaf",
+      "name": "Composting",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-undo",
+      "name": "Take-back Programs",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-recycle",
+      "name": "Sourcing Recycled Materials",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-box-open icon",
+      "name": "Sustainable Packaging",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-minus-circle",
+      "name": "Waste Minimization",
+      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+    },
+    {
+      "icon": "fa fa-graduation-cap icon",
+      "name": "Training and Capacity Building",
       "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
     }
   ],
   "Driving":[
     {
-      "icon": "fa fa-wordpress",
-      "name": "EPR Compliance Management",
-      "text": "India’s EPR landscape is both complex and evolving, and navigating these regulations can be daunting."
+      "icon": "fa fa-recycle",
+      "name": "The Power of Circularity",
+      "text": "The prevailing business-as-usual state of production and consumption is exhausting our resources. This is burdening the environmental capacity to support life, creating inequity of resource access within the society and promising to exacerbate it even more in the future. The “take-make-waste” model simply cannot sustain. We need to do better!We champion a circular economy where resources are kept in the loop, creating closed-loop systems that minimise waste and maximise resource recovery - ultimately reducing dependency on virgin resources."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Waste Management Solutions",
-      "text": "We believe that waste management solutions must focus on the complete lifecycle of a product and integrate sustainability in the operational aspects and processes of an enterprise."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Capacity Building",
-      "text": "Empowering informed action, Wastewyze offers capacity building services for private, public, and government sectors. Our programs equip participants with the knowledge and skills to navigate Extended Producer Responsibility (EPR) regulations."
+      "icon": "fa fa-users",
+      "name": "Sustained Social Impact",
+      "text": "A circular economy is nothing without its enablers.We recognize the vital role waste workers play in our society and strive to improve their working conditions and livelihoods. We advocate for formalisation, fair wages, safety measures, and skill development opportunities, ensuring everyone benefits from a Waste-Wise India. Your engagement with us for conscious waste management helps fuel this. "
     }
 
   ],

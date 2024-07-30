@@ -43,7 +43,7 @@ const App = () => {
         <Route path="/" element={
           <>
             <Header data={landingPageData.Header} />
-            <Features data={landingPageData.Features} />
+            {/* <Features data={landingPageData.Features} /> */}
             <About data={landingPageData.About} />
             <WhatDrivingUs data={landingPageData.Driving} />
             <Services data={landingPageData.Services} />

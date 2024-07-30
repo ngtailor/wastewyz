@@ -1,6 +1,14 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 
 export const Header = (props) => {
+
+  const navigate = useNavigate();
+    
+  const handleReadMore = () => {
+    navigate('/who-we-are');
+  };
+
   return (
     <header id="header">
       <div className="intro">

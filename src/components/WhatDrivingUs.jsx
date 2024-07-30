@@ -13,26 +13,18 @@ export const WhatDrivingUs = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>What’s Driving Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-          <span
-              style={{ color: 'green', cursor: 'pointer' }}
-              onClick={handleReadMore}
-            >
-              ... Know More
-            </span>
+           
         </div>
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
+                <div key={`${d.name}-${i}`} className="col-md-6">
                   {" "}
                   <i className={d.icon}></i>
                   <div className="driving-desc">
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>
+                    <a class="button arrow" href="#services">Know More...</a>
                   </div>
                 </div>
               ))
