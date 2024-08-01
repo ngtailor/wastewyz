@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Navigation } from '../navigation';
 
 export const EprManagement = () => {
 
@@ -41,6 +42,7 @@ export const EprManagement = () => {
         navigate('/know_epr_management');
     };
     return (
+        <>
         <div id="services" className="text-center">
             <div className="container">
                 <div className="section-title">
@@ -72,5 +74,6 @@ export const EprManagement = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }

@@ -34,7 +34,7 @@ export const Services = (props) => {
             ))
             : "loading"}
         </div>
-            <a class="button arrow" href="/epr_management">Know More...</a>
+            <a class="button arrow" href="#service">Know More...</a>
       </div>
     </div>
   );
