@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 import { Contact } from "../contact";
 import JsonData from '../../data/data.json'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaCheck } from 'react-icons/fa'
 
 export const KnowMore = (props) => {
 
@@ -24,7 +26,9 @@ export const KnowMore = (props) => {
             "Mock Audits for EPR: The CPCB conducts third party audits of PWPs and PIBOs to ensure transparency and reliability of information provided regarding operations. We conduct mock audits to ensure that you are at par with regulatory requirements of these audits.",
             "Use of Recycled Plastic: We help with connecting Producers and PWPs for good quality recycled plastic material across categories and Brand Owners with good quality recycled packaging providers."
         ],
-        usedOil:["Voluntary EPR Systems - Want to pioneer producer responsibility in your segment ahead of regulatory requirements? We will help you develop a plan and appropriate systems for the same."],
+        usedOil: ["Voluntary EPR Systems - Want to pioneer producer responsibility in your segment ahead of regulatory requirements? We will help you develop a plan and appropriate systems for the same."],
+        Voluntary: ['Want to pioneer producer responsibility in your segment ahead of regulatory requirements? We will help you design an EPR program with innovative solutions for product take-back, recycling and waste minimization.'],
+        ComingSoon: ['Campaigns (awareness building, waste collection drives, innovation hackathons, wastewyze certified campuses/schools, partnerships with sustainable consumer products and collaborative campaigns, waste and art).']
 
     },)
 
@@ -40,17 +44,31 @@ export const KnowMore = (props) => {
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="about-text">
-                                <h2>We are leaders in EPR for all waste streams currently under the ambit of Indian regulations.</h2>
+                                <h2>Extended Producer Responsibility (EPR) is</h2>
+                                <h4>We are leaders in EPR for all waste streams currently under the ambit of Indian regulations.</h4>
+                                <div className="waste-container">
+                                    <div className="waste-box">Plastic Packaging Waste</div>
+                                    <div className="waste-box">E-waste</div>
+                                    <div className="waste-box">Battery Waste</div>
+                                    <div className="waste-box">Waste Tyre</div>
+                                </div>
+
                                 <h3>EPR for Plastic Packaging</h3>
                                 <h3>Our services for EPR compliance include:</h3>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR Registration</h3>
+                                        <h3 className="heading-name" style={{ color: ' ' }}>EPR Registration</h3>
+
                                         <ul>
+
                                             {data
+
                                                 ? data.Registration.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
-                                                ))
+                                                    <>
+
+                                                        <li key={`${d}-${i}`}>
+                                                            {d}</li>
+                                                    </>))
                                                 : "loading"}
                                         </ul>
                                     </div>
@@ -58,8 +76,9 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR compliance</h3>
+                                        <h3 className="heading-name">EPR compliance</h3>
                                         <ul>
+
                                             {data
                                                 ? data.compliance.map((d, i) => (
                                                     <li key={`${d}-${i}`}>{d}</li>
@@ -70,7 +89,7 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR for E-waste
+                                        <h3 className="heading-name">EPR for E-waste
                                         </h3>
                                         {/* <ul>
                                             {data
@@ -83,7 +102,7 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR for Battery
+                                        <h3 className="heading-name">EPR for Battery
                                         </h3>
                                         {/* <ul>
                                             {data
@@ -96,7 +115,7 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR for Waste Tyre
+                                        <h3 className="heading-name">EPR for Waste Tyre
                                         </h3>
                                         {/* <ul>
                                             {data
@@ -109,7 +128,7 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3>EPR for Used Oil</h3>
+                                        <h3 className="heading-name">EPR for Used Oil</h3>
                                         <ul>
                                             {data
                                                 ? data.usedOil.map((d, i) => (
@@ -123,6 +142,47 @@ export const KnowMore = (props) => {
 
                         </div>
                     </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <div className="about-text">
+                                <div className="list-style">
+                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                        <h3 className="heading-name">Voluntary EPR Systems
+                                        </h3>
+                                        <ul>
+                                            {data
+                                                ? data.Voluntary.map((d, i) => (
+                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                ))
+                                                : "loading"}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <div className="about-text">
+                                <div className="list-style">
+                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                        <h3 className="heading-name">Coming Soon: Wastewyze Community Builder
+                                        </h3>
+                                        <ul>
+                                            {data
+                                                ? data.ComingSoon.map((d, i) => (
+                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                ))
+                                                : "loading"}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <Contact data={landingPageData.Contact} />

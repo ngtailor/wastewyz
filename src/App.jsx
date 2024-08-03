@@ -65,7 +65,8 @@ const App = () => {
         <Route path='/epr_management_solutions' element={<EprSolutions />} />
         <Route path='/capcity_build' element={<CapacityBuilding />} />
         <Route path='/team' element={<OurTeam />} />
-
+        <Route path='/connect' element={<Contact  data={landingPageData.Contact}/>} />
+        
       </Routes>
     </Router>
   );

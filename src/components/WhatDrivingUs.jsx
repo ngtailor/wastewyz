@@ -23,8 +23,8 @@ export const WhatDrivingUs = (props) => {
                   <i className={d.icon}></i>
                   <div className="driving-desc">
                     <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                    <a class="button arrow" href="#services">Know More...</a>
+                    <p style={{textAlign:'justify'}}>{d.text}</p>
+                    {/* <a class="button arrow" href="#services">Know More...</a> */}
                   </div>
                 </div>
               ))

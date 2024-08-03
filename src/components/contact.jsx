@@ -78,7 +78,7 @@ export const Contact = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
@@ -107,7 +107,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -215,21 +215,21 @@ export const Contact = (props) => {
                     <a href={props.data ? props.data.instagram : "/"}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <i className="fa fa-instagram"></i>
+                      <i className="fa-brands fa-instagram custom-icon instagram fa-2x"></i>
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.whatsapp : "/"}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <i className="fa fa-whatsapp"></i>
+                       <i className="fa-brands fa-whatsapp custom-icon whatsapp fa-2x"></i>
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.linkedin : "/"}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <i className="fa fa-linkedin-square"></i>
+                      <i className="fa-brands fa-linkedin custom-icon linkedin fa-2x"></i>
                     </a>
                   </li>
                 </ul>
@@ -264,8 +264,9 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 All Rights Reserved
+            &copy; 2024 Neerja Associates Pvt. Ltd. All Rights Reserved.
           </p>
+
         </div>
       </div>
     </div>

@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import logo from '../image/wastewyze-logo.jpeg'
+import logo from '../image/waste-wiselogo.jpg'
 
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-       <div className="brand-logo">
-         <a className="navbar-brand page-scroll" href="#page-top">
-                <img src={logo} alt="Wastewyze Logo" style={{ height: '40px', marginRight: '10px' }} />
-          </a>
-
-         </div>
-      <div className="container" style={{ width: "1279px" }}>
+      <div className="brand-logo" style={{ marginBottom: '0px', marginTop: '10px' }}>
+        <a className="navbar-brand" href="#page-top">
+          <img src={logo} alt="Wastewyze Logo" style={{ class: 'responsive', width: '250px', display: 'block', margin: '-41 auto' }} />
+        </a>
+      </div>
+      <div className="container" style={{ width: "1170" }}>
         <div className="navbar-header">
           <button
             type="button"
@@ -30,14 +29,14 @@ export const Navigation = (props) => {
           </a> */}
 
         </div>
-        
+
 
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
-         
-             
+
+
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="/" className="page-scroll">
@@ -46,7 +45,7 @@ export const Navigation = (props) => {
             </li>
             <li className="page-scroll">
               <a
-                href="#about"
+                href="/who-we-are"
               >
                 About <span></span>
               </a>
@@ -66,24 +65,24 @@ export const Navigation = (props) => {
               </ul> */}
             </li>
 
-            <li className="page-scroll">
+            {/* <li className="page-scroll">
               <a
                 href="#driving"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >What’s Driving Us <span></span>
+              >What’s Driving Us
               </a>
-              {/* <ul className="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
                   <a href="/circulaty">The Power of Circularity</a>
                 </li>
                 <li>
                   <a href="/social_imapct">Sustained Social Impact </a>
                 </li>
-              </ul> */}
-            </li>
+              </ul>
+            </li> */}
             {/* <li>
               <a href="#portfolio" className="page-scroll">
                 Our Services
@@ -91,7 +90,7 @@ export const Navigation = (props) => {
             </li> */}
             <li className="page-scroll">
               <a
-                href="#services"
+                href="/epr_management"
                 className="dropdown-toggle"
                 role="button"
                 aria-haspopup="true"
@@ -124,13 +123,13 @@ export const Navigation = (props) => {
                 EPR Management
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#team" className="page-scroll">
                 Our Team
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href="/connect" className="page-scroll">
                 Connect
               </a>
             </li>

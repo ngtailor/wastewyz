@@ -21,13 +21,13 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About Us</h2>
-              <p>{props.data ?  props.data.paragraph.slice(0, 100) : "loading..."}
-              <span
+              <p style={{textAlign:'justify'}}>{props.data ?  props.data.paragraph : "loading..."}
+              {/* <span
               style={{ color: 'green', cursor: 'pointer' }}
               onClick={handleReadMore}
             >
               ... Know More
-            </span>
+            </span> */}
               </p>
               {/* <h3>Why Choose Us?</h3> */}
               {/* <div className="list-style">

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body,
 html {
   font-family: 'Poppins', sans-serif;
@@ -283,26 +284,41 @@ header .intro-text {
   bottom: 0;
   left: 0;
 }
+.about-text{
+  margin-top: 25px;
+}
+ .list-style ul{
+  padding: 5px;
+}
 #about .about-text li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
+  text-align: justify;
 }
 #about .about-text li:before {
-  content: "\f00c";
-  font-family: "'Oswald', sans-serif;";
-  color: #5ca9fb;
-  font-size: 11px;
-  font-weight: 300;
+  content: "\f00c"; /* Unicode for Font Awesome checkmark */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome font family */
+  color: #28a745; /* Green color for the checkmark */
+  font-size: 15px;
+  font-weight: 900; /* Font Awesome uses 900 for solid icons */
   padding-right: 8px;
 }
-#about img {
+.img-responsiveone{
   width: 520px;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+.img-responsivetwo{
+  width: 530px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  height: 500px;
 }
 #about p {
   line-height: 24px;
@@ -389,6 +405,7 @@ header .intro-text {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
+  margin-left: 115px;
 }
 #driving p {
   color: rgba(255, 255, 255, 0.75);
@@ -621,7 +638,7 @@ label {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 25px;
   margin-top: 25px;
-  text-align: center;
+  text-align: left;
 }
 #contact .social ul li {
   display: inline-block;
@@ -638,8 +655,8 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.1);
 }
 /* Footer Section*/
 #footer {
@@ -846,8 +863,9 @@ label {
   }
   
   .brand-logo{
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
+ 
 
   a.button {
     margin: 15px;
@@ -884,9 +902,214 @@ label {
     }
 }
 
+.waste-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.waste-box {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #f2f2f2, #cccccc); /* Linear gradient background */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.waste-box:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e0e0e0, #a8a8a8); /* Linear gradient on hover */
+}
+.heading-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; /* Light weight */
+  color: #333; /* Replace with your desired color */
+}
+
+.list-style ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.list-style li {
+  position: relative;
+  padding-right: 30px; /* Add padding to accommodate the icon */
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.icon-container {
+  position: absolute;
+  right: 10px; /* Position the icon to the right with some space */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.check-icon {
+  color: #4CAF50; /* Green color for checkmark */
+  font-size: 20px; /* Adjust the size of the checkmark */
+}
+
+h3 {
+  font-size: 24px; /* Adjust size as needed */
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Aligns the icon and text vertically */
+  margin: 20px 0; /* Adds margin above and below the heading */
+}
+
+h3 i {
+  font-size: 24px; /* Icon size */
+  color: #007bff; /* Icon color (adjust to match your theme) */
+  margin-right: 15px; /* Space between icon and text */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+h3:hover i {
+  color: #0056b3; /* Darker color on hover */
+}
+
+h3 span {
+  font-size: 24px; /* Adjust if needed */
+}
+hr {
+  border: 0;
+  height: 2px; /* Thickness of the line */
+  background: linear-gradient(to right, #4CAF50, #FFC107); /* Gradient color */
+  margin: 20px 0; /* Spacing above and below the line */
+  width: 100%;
+}
+
+.custom-icon {
+  font-size: 2rem; /* Adjust the size as needed */
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease; /* Smooth transition for color, background, and transform changes */
+}
+
+.custom-icon.instagram {
+  color: #fff; /* White color for the icon */
+  background: linear-gradient(45deg, #f58529, #feda75, #dd2a7b, #8134af, #515bd4); /* Instagram gradient background */
+  border-radius: 20%; /* Circular background */
+  padding: 0.25rem; /* Padding around the icon */
+  display: inline-block; /* Ensure the icon aligns correctly with the background */
+}
+
+.custom-icon.instagram:hover {
+  color: #fff; /* Keep icon color white on hover */
+  background: linear-gradient(45deg, #feda75, #dd2a7b, #8134af, #515bd4, #f58529); /* Adjust gradient on hover if needed */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+.custom-icon.whatsapp {
+  color: #fff; /* White color for the icon */
+  background: #25D366; /* WhatsApp green background */
+  border-radius: 20%; /* Circular background */
+  padding: 0.25rem; /* Padding around the icon */
+  display: inline-block; /* Ensure the icon aligns correctly with the background */
+}
+
+.custom-icon.whatsapp:hover {
+  color: #fff; /* Keep icon color white on hover */
+  background: #128C7E; /* Darker green background on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.custom-icon.linkedin {
+  color: #fff; /* White color for the icon */
+  background: #0077b5; /* LinkedIn blue background */
+  border-radius: 20%; /* Circular background */
+  padding: 0.25rem; /* Padding around the icon */
+  display: inline-block; /* Ensure the icon aligns correctly with the background */
+}
+
+.custom-icon.linkedin:hover {
+  color: #fff; /* Keep icon color white on hover */
+  background: #005582; /* Darker blue background on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+
+
+/*  css for our service */
+/* src/components/IconGrid.css */
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.icon-text {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .icon-wrapper {
+      width: 120px;
+      height: 120px;
+  }
+
+  .icon {
+      font-size: 36px;
+  }
+
+  .icon-text {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-wrapper {
+      width: 100px;
+      height: 100px;
+  }
+
+  .icon {
+      font-size: 30px;
+  }
+
+  .icon-text {
+      font-size: 10px;
   }
 }
