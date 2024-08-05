@@ -17,7 +17,7 @@ export const Navigation = (props) => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#navbarCollapse"
-             aria-expanded="false"
+            aria-expanded="false"
           >
             {" "}
             <span className="sr-only">Toggle navigation</span>{" "}
@@ -134,6 +134,12 @@ export const Navigation = (props) => {
                 Connect
               </a>
             </li>
+            <li>
+              <a href="https://www.blueheart.foundation/" className="page-scroll" target="_blank" rel="noopener noreferrer">
+                CRE
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>

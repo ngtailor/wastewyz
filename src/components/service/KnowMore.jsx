@@ -44,7 +44,7 @@ export const KnowMore = (props) => {
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="about-text">
-                                <h2>Extended Producer Responsibility (EPR) is</h2>
+                                <h2>Extended Producer Responsibility is</h2>
                                 <h4>We are leaders in EPR for all waste streams currently under the ambit of Indian regulations.</h4>
                                 <div className="waste-container">
                                     <div className="waste-box">Plastic Packaging Waste</div>
@@ -54,7 +54,7 @@ export const KnowMore = (props) => {
                                 </div>
 
                                 <h3>EPR for Plastic Packaging</h3>
-                                <h3>Our services for EPR compliance include:</h3>
+                                <h4>Our services for EPR compliance include:</h4>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
                                         <h3 className="heading-name">EPR compliance</h3>
