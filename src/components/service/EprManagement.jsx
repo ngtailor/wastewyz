@@ -16,7 +16,7 @@ export const EprManagement = () => {
     const handleReadMore = () => {
         navigate('/know_epr_management');
         window.scrollTo(0, 0);
-      };
+    };
 
 
     const [data, setData] = useState({
@@ -237,7 +237,7 @@ export const EprManagement = () => {
                         <div className="col-xs-12">
                             <div className="about-text">
                                 <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                    <div className="col-12">
                                         <h3><i class="fas fa-chart-bar"></i> Capacity Building</h3>
                                         <ul>
                                             {data
@@ -251,16 +251,16 @@ export const EprManagement = () => {
                             </div>
                         </div>
                     </div>
-                     <span
-              style={{ color: 'green', cursor: 'pointer' }}
-              onClick={handleReadMore}
-            >
-              ... Know More
-            </span>
+                    <span
+                        style={{ color: 'green', cursor: 'pointer' }}
+                        onClick={handleReadMore}
+                    >
+                        ... Know More
+                    </span>
                     {/* <KnowMore></KnowMore> */}
                 </div>
             </div>
-           
+
             <Contact data={landingPageData.Contact} />
         </>
 

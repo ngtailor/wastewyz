@@ -297,14 +297,15 @@ header .intro-text {
   padding: 0;
   text-align: justify;
 }
-#about .about-text li:before {
-  content: "\f00c"; /* Unicode for Font Awesome checkmark */
-  font-family: 'Font Awesome 5 Free'; /* Font Awesome font family */
-  color: #28a745; /* Green color for the checkmark */
-  font-size: 15px;
-  font-weight: 900; /* Font Awesome uses 900 for solid icons */
-  padding-right: 8px;
+.about-text li:before {
+  content: "\f06c"; /* Unicode for the Font Awesome leaf icon */
+  font-family: 'Font Awesome 6 Free'; /* Font Awesome font family */
+  font-weight: 900; /* Solid icons */
+  color: #28a745; /* Green color for the icon */
+  font-size: 20px; /* Adjust size as needed */
+  padding-right: 8px; /* Space between icon and text */
 }
+
 .img-responsiveone{
   width: 520px;
   margin-top: 10px;
@@ -847,7 +848,7 @@ label {
   }
   
   .phone-link:hover {
-    background-color: rgb(187, 227, 187); /* Highlight color on hover */
+    background-color: rgb(137, 155, 216); /* Highlight color on hover */
   }
 
   .email-link {
@@ -859,7 +860,7 @@ label {
   }
   
   .email-link:hover {
-    background-color: rgb(187, 227, 187); /* Highlight color on hover */
+    background-color: rgb(137, 155, 216); /* Highlight color on hover */
   }
   
   .brand-logo{
@@ -1111,5 +1112,31 @@ hr {
 
   .icon-text {
       font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 150px; /* Smaller logo for mobile */
+    margin: 5px 0; /* Adjust margins for spacing */
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .navbar-collapse {
+    clear: both;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333; /* Mobile link color */
   }
 }

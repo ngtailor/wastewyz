@@ -10,13 +10,14 @@ export const Navigation = (props) => {
           <img src={logo} alt="Wastewyze Logo" style={{ class: 'responsive', width: '250px', display: 'block', margin: '-41 auto' }} />
         </a>
       </div>
-      <div className="container" style={{ width: "1170" }}>
+      <div className="container-fluid">
         <div className="navbar-header">
           <button
             type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
+            data-target="#navbarCollapse"
+             aria-expanded="false"
           >
             {" "}
             <span className="sr-only">Toggle navigation</span>{" "}
@@ -33,7 +34,7 @@ export const Navigation = (props) => {
 
         <div
           className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
+          id="navbarCollapse"
         >
 
 

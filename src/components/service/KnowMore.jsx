@@ -57,6 +57,19 @@ export const KnowMore = (props) => {
                                 <h3>Our services for EPR compliance include:</h3>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
+                                        <h3 className="heading-name">EPR compliance</h3>
+                                        <ul>
+
+                                            {data
+                                                ? data.compliance.map((d, i) => (
+                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                ))
+                                                : "loading"}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="list-style">
+                                    <div className="col-lg-6 col-sm-6 col-xs-12">
                                         <h3 className="heading-name" style={{ color: ' ' }}>EPR Registration</h3>
 
                                         <ul>
@@ -74,13 +87,14 @@ export const KnowMore = (props) => {
                                     </div>
 
                                 </div>
+                              
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3 className="heading-name">EPR compliance</h3>
+                                        <h3 className="heading-name">EPR for E-waste
+                                        </h3>
                                         <ul>
-
                                             {data
-                                                ? data.compliance.map((d, i) => (
+                                                ? data.Registration.map((d, i) => (
                                                     <li key={`${d}-${i}`}>{d}</li>
                                                 ))
                                                 : "loading"}
@@ -89,41 +103,36 @@ export const KnowMore = (props) => {
                                 </div>
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
-                                        <h3 className="heading-name">EPR for E-waste
-                                        </h3>
-                                        {/* <ul>
-                                            {data
-                                                ? data.compliance.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
-                                                ))
-                                                : "loading"}
-                                        </ul> */}
-                                    </div>
-                                </div>
-                                <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
                                         <h3 className="heading-name">EPR for Battery
                                         </h3>
-                                        {/* <ul>
+                                        <ul>
                                             {data
-                                                ? data.compliance.map((d, i) => (
+                                                ? data.Registration.map((d, i) => (
                                                     <li key={`${d}-${i}`}>{d}</li>
                                                 ))
                                                 : "loading"}
-                                        </ul> */}
+                                        </ul>
                                     </div>
                                 </div>
-                                <div className="list-style">
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <div className="about-text">
+                            <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
                                         <h3 className="heading-name">EPR for Waste Tyre
                                         </h3>
-                                        {/* <ul>
+                                        <ul>
                                             {data
-                                                ? data.compliance.map((d, i) => (
+                                                ? data.Registration.map((d, i) => (
                                                     <li key={`${d}-${i}`}>{d}</li>
                                                 ))
                                                 : "loading"}
-                                        </ul> */}
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className="list-style">
@@ -139,15 +148,14 @@ export const KnowMore = (props) => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <hr />
+                    <hr/>
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="about-text">
                                 <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                <div className="col-12">
                                         <h3 className="heading-name">Voluntary EPR Systems
                                         </h3>
                                         <ul>
@@ -167,7 +175,7 @@ export const KnowMore = (props) => {
                         <div className="col-xs-12">
                             <div className="about-text">
                                 <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                <div className="col-12">
                                         <h3 className="heading-name">Coming Soon: Wastewyze Community Builder
                                         </h3>
                                         <ul>

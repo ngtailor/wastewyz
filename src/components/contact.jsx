@@ -1,39 +1,71 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import axios from "axios";
+import { toast } from 'react-toastify';
 
 const initialState = {
   name: "",
   email: "",
+  company: "",
+  phone: "",
   message: "",
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, company, phone, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
+    if (name === "phone") {
+      // Allow only numbers and ensure max length of 10 digits
+      const phoneValue = value.replace(/\D/g, "").slice(0, 10);
+      setState((prevState) => ({ ...prevState, [name]: phoneValue }));
+    } else if (name === "email") {
+      // Email validation using a regular expression
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const isValidEmail = emailPattern.test(value);
+      if (isValidEmail) {
+        setState((prevState) => ({ ...prevState, [name]: value }));
+        document.getElementById("emailError").textContent = ""; // Clear error message
+      } else {
+        document.getElementById("emailError").textContent = "Please enter a valid email address";
+      }
+    } else {
+      setState((prevState) => ({ ...prevState, [name]: value }));
+    }
   };
   const clearState = () => setState({ ...initialState });
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(name, email, company, phone, message);
 
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
+    try {
+      const response = await axios.post("https://biowaste.in/wastewy_contactUs", {
+        nm: name,
+        eml: email,
+        cmp: company,
+        mob: phone,
+        msg: message,
+      });
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      console.log("Form data sent to API:", response.data);
+      toast.success("Form submitted successfully!", {
+        position: "top-center", // Position of the toast
+        autoClose: 5000, // Duration in milliseconds before the toast auto-closes
+        hideProgressBar: false, // Whether to show progress bar
+        closeOnClick: true, // Whether to close on click
+        pauseOnHover: true, // Whether to pause on hover
+        draggable: true, // Whether the toast can be dragged
+        progress: undefined, // Progress bar (if applicable)
+      });
+  
+      // Clear the form fields after successful submission
+      clearState();
+    } catch (error) {
+      console.log("Error sending data:", error);
+    }
   };
   return (
     <div>
@@ -74,7 +106,7 @@ export const Contact = (props) => {
                         required
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
+                      <p className="help-block text-danger" id="emailError"></p>
                     </div>
                   </div>
                 </div>
@@ -126,11 +158,13 @@ export const Contact = (props) => {
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
-                        type="phone"
+                        type="tel"
                         id="phone"
-                        name="email"
+                        name="phone"
                         className="form-control"
                         placeholder="Phone Number"
+                        pattern="\d{10}"
+                        maxLength="10"
                         required
                         onChange={handleChange}
                       />
@@ -164,7 +198,18 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {props.data ? props.data.address : "loading"}
+                {props.data ? (
+                  <a 
+                    href={`https://www.google.com/maps?q=${encodeURIComponent(props.data.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="email-link"  // Optional: Keeps the original style
+                  >
+                    {props.data.address}
+                  </a>
+                ) : (
+                  "loading"
+                )}
               </p>
             </div>
             {/* <div className="contact-item">
@@ -222,7 +267,7 @@ export const Contact = (props) => {
                     <a href={props.data ? props.data.whatsapp : "/"}
                       target="_blank"
                       rel="noopener noreferrer">
-                       <i className="fa-brands fa-whatsapp custom-icon whatsapp fa-2x"></i>
+                      <i className="fa-brands fa-whatsapp custom-icon whatsapp fa-2x"></i>
                     </a>
                   </li>
                   <li>

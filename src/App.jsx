@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import { WhatDrivingUs } from "./components/WhatDrivingUs";
@@ -24,6 +21,8 @@ import { KnowMore } from "./components/service/KnowMore";
 import { EprSolutions } from './components/service/EprSolutions'
 import { CapacityBuilding } from "./components/service/CpacityBuilding";
 import { OurTeam } from "./components/team/OurTeam";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -58,16 +57,15 @@ const App = () => {
         <Route path="/our-mission" element={<Mission />} />
         <Route path="/what-we-do" element={<Wedo />} />
         <Route path="/circulaty" element={<Circulity />} />
-        <Route path="/circulaty" element={<Circulity />} />
-        <Route path="/social_imapct" element={<SocialImpact />} />
+        <Route path="/social_impact" element={<SocialImpact />} />
         <Route path='/epr_management' element={<EprManagement />} />
         <Route path='/know_epr_management' element={<KnowMore />} />
         <Route path='/epr_management_solutions' element={<EprSolutions />} />
         <Route path='/capcity_build' element={<CapacityBuilding />} />
         <Route path='/team' element={<OurTeam />} />
-        <Route path='/connect' element={<Contact  data={landingPageData.Contact}/>} />
-        
+        <Route path='/connect' element={<Contact data={landingPageData.Contact}/>} />
       </Routes>
+      <ToastContainer />
     </Router>
   );
 };
