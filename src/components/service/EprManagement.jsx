@@ -41,9 +41,12 @@ export const EprManagement = () => {
     },)
     const navigate = useNavigate();
 
-    const handleKnowMore = () => {
-        navigate('/know_epr_management');
-    };
+    const handleConect = () => {
+        navigate('/connect');
+        window.scrollTo(0, 0);
+
+    }
+
     return (
 
         <>
@@ -55,7 +58,7 @@ export const EprManagement = () => {
                                 <h2>Our Services </h2>
 
                                 <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                    <div className="col-12">
                                         <h3><i class="fas fa-balance-scale"></i> EPR Compliance Management</h3>
                                         <ul>
                                             {data
@@ -65,10 +68,28 @@ export const EprManagement = () => {
                                                 : "loading"}
                                         </ul>
                                     </div>
+                                    <span
+                                        style={{
+                                            color: '#45C3E5', /* Primary brand color */
+                                            cursor: 'pointer',
+                                            textDecoration: 'underline', /* Optional: Adds underline to indicate it's clickable */
+                                        }}
+                                        onClick={handleReadMore}
+                                    >
+                                        ... Know More
+                                    </span>
 
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <div className="about-text">
                                 <div className="list-style">
-                                    <div className="col-lg-6 col-sm-6 col-xs-12">
+                                    <div className="col-12">
                                         <h3><i class="fas fa-trash-alt"></i> Waste Management Solutions</h3>
 
                                         <ul>
@@ -80,12 +101,10 @@ export const EprManagement = () => {
                                         </ul>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
-                    <hr />
+
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="about-text">
@@ -97,10 +116,14 @@ export const EprManagement = () => {
                                         <ul>
                                             {data
                                                 ? data.materials.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                    <li key={`${d}-${i}`}>{d}
+                                                    </li>
                                                 ))
                                                 : "loading"}
                                         </ul>
+                                        <div className='lets-connect-hover' onClick={handleConect}>
+                                            ... Let’S Connect
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="list-style">
@@ -110,10 +133,14 @@ export const EprManagement = () => {
                                         <ul>
                                             {data
                                                 ? data.reduction.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                    <li key={`${d}-${i}`}>{d}
+                                                    </li>
                                                 ))
                                                 : "loading"}
                                         </ul>
+                                        <div className='lets-connect-hover' onClick={handleConect}>
+                                            ... Let’S Connect
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="list-style">
@@ -124,10 +151,14 @@ export const EprManagement = () => {
                                         <ul>
                                             {data
                                                 ? data.Monomaterial.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                    <li key={`${d}-${i}`}>{d}
+                                                    </li>
                                                 ))
                                                 : "loading"}
                                         </ul>
+                                        <div className='lets-connect-hover' onClick={handleConect}>
+                                            ... Let’S Connect
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="list-style">
@@ -137,16 +168,20 @@ export const EprManagement = () => {
                                         <ul>
                                             {data
                                                 ? data.Programs.map((d, i) => (
-                                                    <li key={`${d}-${i}`}>{d}</li>
+                                                    <li key={`${d}-${i}`}>{d}
+                                                    </li>
                                                 ))
                                                 : "loading"}
                                         </ul>
+                                        <div className='lets-connect-hover' onClick={handleConect}>
+                                            ... Let’S Connect
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr />
+
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="about-text">
@@ -154,8 +189,6 @@ export const EprManagement = () => {
                                 <div className="list-style">
                                     <div className="col-lg-6 col-sm-6 col-xs-12">
                                         <h3><i class="fas fa-truck"></i> Collection</h3>
-
-
                                         <ul>
                                             {data
                                                 ? data.Collection.map((d, i) => (
@@ -247,16 +280,14 @@ export const EprManagement = () => {
                                                 : "loading"}
                                         </ul>
                                     </div>
+                                    <div className='lets-connect-hover' onClick={handleConect}>
+                                            ... Let’S Connect
+                                        </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span
-                        style={{ color: 'green', cursor: 'pointer' }}
-                        onClick={handleReadMore}
-                    >
-                        ... Know More
-                    </span>
+
                     {/* <KnowMore></KnowMore> */}
                 </div>
             </div>

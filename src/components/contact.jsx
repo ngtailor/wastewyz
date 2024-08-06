@@ -51,14 +51,14 @@ export const Contact = (props) => {
       });
 
       console.log("Form data sent to API:", response.data);
-      toast.success("Form submitted successfully!", {
-        position: "top-center", // Position of the toast
-        autoClose: 5000, // Duration in milliseconds before the toast auto-closes
-        hideProgressBar: false, // Whether to show progress bar
-        closeOnClick: true, // Whether to close on click
-        pauseOnHover: true, // Whether to pause on hover
-        draggable: true, // Whether the toast can be dragged
-        progress: undefined, // Progress bar (if applicable)
+      toast.success("Form submitted successfully! We will contact you soon.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
       });
   
       // Clear the form fields after successful submission
@@ -74,7 +74,7 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Let’s Connect</h2>
                 <p>
                   We are eager to talk to you and collaborate. Say hello to us at wastewyze@gmail.com or drop in your details below for a call back.
                 </p>
@@ -309,7 +309,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Neerja Associates Pvt. Ltd. All Rights Reserved.
+            &copy; 2024 All Rights Reserved.
           </p>
 
         </div>

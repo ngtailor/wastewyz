@@ -120,7 +120,7 @@ export const Navigation = (props) => {
             </li> */}
 
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="/know_epr_management" className="page-scroll">
                 EPR Management
               </a>
             </li>
@@ -136,7 +136,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="https://www.blueheart.foundation/" className="page-scroll" target="_blank" rel="noopener noreferrer">
-                CRE
+                CSR
               </a>
             </li>
 
