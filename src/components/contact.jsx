@@ -11,7 +11,7 @@ const initialState = {
   phone: "",
   message: "",
 };
-export const Contact = (props) => {
+ const Contact = (props) => {
   const [{ name, email, company, phone, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
@@ -317,3 +317,5 @@ export const Contact = (props) => {
     </div>
   );
 };
+
+export  default  React.memo(Contact)

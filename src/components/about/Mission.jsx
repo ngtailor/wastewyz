@@ -4,7 +4,7 @@ import { Contact } from '../contact'
 import JsonData from '../../data/data.json'
 
 
-export const Mission = () => {
+ const Mission = () => {
     const [landingPageData, setLandingPageData] = useState({});
     useEffect(() => {
         setLandingPageData(JsonData);
@@ -46,3 +46,4 @@ export const Mission = () => {
 
     )
 }
+export default React.memo(Mission)
